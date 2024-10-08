@@ -2,31 +2,39 @@
 proc sql;
 	create table WC_MATCHES_1 as
 	select
-		input(Date, yymmdd10.) as date format=ddmmyy10.,
-		home_team,
-		Score,
-		away_team,
-		home_score,
-		home_penalty,
-		away_penalty,
-		away_score,
-		Round,
-		Venue,
-		Host,
+		input(wcm.Date, yymmdd10.) as date format=ddmmyy10.,
+		wcm.Year,
+		wcm.home_team,
+		wcm.Score,
+		wcm.away_team,
+		wcm.home_score,
+		wcm.home_penalty,
+		wcm.away_penalty,
+		wcm.away_score,
+		wcm.Round,
+		wcm.Venue,
+		wcm.Host,
+		wcm.home_manager,
+		wcm.home_captain,
+		wcm.away_manager,
+		wcm.away_captain,
+		wc.Champion,
+		wc.TopScorrer,
 		/* Lógica para definir o status do time da casa (home_status) */
 		case 
-			when home_score > away_score then 'Winner'
-			when home_score < away_score then 'Loser'
+			when wcm.home_score > wcm.away_score then 'Winner'
+			when wcm.home_score < wcm.away_score then 'Loser'
 			else 'Draw'
 		end as home_status,
 		/* Lógica para definir o status do time visitante (away_status) */
 		case 
-			when away_score > home_score then 'Winner'
-			when away_score < home_score then 'Loser'
+			when wcm.away_score > wcm.home_score then 'Winner'
+			when wcm.away_score < wcm.home_score then 'Loser'
 			else 'Draw'
 		end as away_status
-	from PUBLIC.WC_MATCHES
-	order by Date asc;
+	from PUBLIC.WC_MATCHES wcm
+	left join PUBLIC.WC wc on (wc.Year = wcm.Year)
+	order by wcm.Date asc;
 quit;
 
 /* Defina as variáveis da macro */
