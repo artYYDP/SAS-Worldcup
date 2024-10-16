@@ -12,7 +12,7 @@ proc sql;
 		wcm.away_penalty,
 		wcm.away_score,
 		wcm.Round,
-		wcm.Venue,
+		st.New_name as Venue,
 		wcm.Host,
 		wcm.home_manager,
 		wcm.home_captain,
@@ -31,9 +31,14 @@ proc sql;
 			when wcm.away_score > wcm.home_score then 'Winner'
 			when wcm.away_score < wcm.home_score then 'Loser'
 			else 'Draw'
-		end as away_status
+		end as away_status,
+		st.Latitude,
+		st.Longitude,
+		st.ISO2,
+		st.ISO3
 	from PUBLIC.WC_MATCHES wcm
 	left join PUBLIC.WC wc on (wc.Year = wcm.Year)
+	left join CASUSER.STADIUMS st on (st.Venue = wcm.Venue)
 	order by wcm.Date asc;
 quit;
 
