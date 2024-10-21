@@ -1,26 +1,30 @@
 # SAS-Worldcup
 
-Projeto de desenvolvimento de um Painel SAS usando o Dataset da Copa do Mundo
+Project to develop a SAS Panel using the World Cup Dataset
 
-## Desenvolvedores
+## Developers
 
-- Jhovany (..)
-- Luiz Lisot
-- Arthur Diego Pereira - Orientador
+- Jhovany Paulo S. Murgia - Trainee
+- Luiz Lisot - Trainee
+- Arthur Diego Pereira - Advisor
 
-## Objetivo do Projeto
+## Project objective
+
+The objective of this project is to develop an interactive dashboard using SAS, with data from the World Cups from 1930 to 2022. This dashboard will serve as a model for creating dashboards with public data, allowing for the practice and development of SAS skills. The project aims to:
+
+- Visualize historical World Cup data: Present statistics and relevant information from all editions of the tournament.
+- Develop SAS competencies: Apply data analysis and visualization techniques using SAS.
+- Create an educational resource: Provide a practical and reusable dashboard example for the developer and data analyst community.
+
+## Requirements
 
 ...
 
-## Requisitos
+## Proposed solutions
 
 ...
 
-## Soluções propostas
-
-...
-
-## Pendências
+## Backlog
 
 - [ ]
 - [ ]
@@ -29,6 +33,6 @@ Projeto de desenvolvimento de um Painel SAS usando o Dataset da Copa do Mundo
 - [ ]
 - [ ]
 
-## Referências
+## References
 
 ...
