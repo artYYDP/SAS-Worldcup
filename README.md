@@ -18,7 +18,50 @@ The objective of this project is to develop an interactive dashboard using SAS, 
 
 ## Requirements
 
-...
+**Functional Requirements:**
+
+Display host country
+
+Display champion country
+
+Display World Cup year
+
+Indicators to be displayed:
+
+- Goals Scored
+- Goals Conceded
+- Total Wins
+- Total Losses
+- Total Draws
+- Total World Cup participations
+- Total countries in a World Cup edition
+- Total editions hosted by a country
+    
+Tables:
+
+- Table containing the champion country’s matches
+- Table with the World Cup stadiums
+- 
+Charts and maps:
+
+- Map with host country
+- Chart with champions’ frequency
+- Chart with a country’s participation frequency in World Cups
+- Chart with the historical frequency of participation in World Cup stages (group stage, round of 16, quarter-finals, semi-finals, and finals)
+- Chart with the evolution of goals scored and goals conceded throughout the World Cups
+- Chart with the percentage of wins, draws, and losses
+
+Filters:
+
+- Champion country
+- Host country
+- World Cup year
+- Participating country
+
+**Business Rules:**
+
+- The dashboard elements must interact according to the filter selections.
+
 
 ## Proposed solutions
 
