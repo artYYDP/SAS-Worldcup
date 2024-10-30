@@ -4,8 +4,8 @@ Project to develop a SAS Panel using the World Cup Dataset
 
 ## Developers
 
-- Jhovany Paulo S. Murgia - Trainee
-- Luiz Lisot - Trainee
+- Jhovany Paulo Schelemberg Murgia - Trainee
+- Luiz Alberto Marques Lisot - Trainee
 - Arthur Diego Pereira - Advisor
 
 ## Project objective
@@ -36,12 +36,12 @@ Indicators to be displayed:
 - Total World Cup participations
 - Total countries in a World Cup edition
 - Total editions hosted by a country
-    
+
 Tables:
 
 - Table containing the champion country’s matches
 - Table with the World Cup stadiums
-- 
+-
 Charts and maps:
 
 - Map with host country
@@ -62,20 +62,6 @@ Filters:
 
 - The dashboard elements must interact according to the filter selections.
 
-
-## Proposed solutions
-
-...
-
-## Backlog
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
 ## References
 
-...
+- [Kaggle | Football - FIFA World Cup, 1930 - 2022](https://www.kaggle.com/datasets/piterfm/fifa-football-world-cup)
