@@ -41,7 +41,7 @@ Tables:
 
 - Table containing the champion country’s matches
 - Table with the World Cup stadiums
--
+
 Charts and maps:
 
 - Map with host country
