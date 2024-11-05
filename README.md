@@ -1,4 +1,4 @@
-# SAS-Worldcup
+# SAS Worldcup
 
 Project to develop a SAS Panel using the World Cup Dataset
 
